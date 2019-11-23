@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+}
+html {
+    background-image: linear-gradient(-125deg,pink,skyblue);
+    background-attachment: fixed;
+}
+/* ส่วนของเมนู */
+#logo{
+    width: 300px;
+    float: left;
+    margin: 5px 0 0 10px;
+}
+.nav {
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+.nav-right{
+    float: right;
+}
+.menu a{
+    float: left;
+    display: block;
+    color:white;
+    text-align: center;
+    font-size: 18px;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.menu a:hover{
+    color: gray;
+}
+/* ส่วนของหัวข้อ */
+.header {
+    padding: 10px;
+    text-align: center;
+}
+  
+.header h1 {
+    color: white;
+    font-size: 50px;
+}
+/* ส่วนของเนื้อหา */
+
+.leftcolumn {   
+    float: left;
+    padding: 10px;
+    width: 65%;
+}
+
+.leftcolumn2 {   
+    float: left;
+    padding: 10px;
+    width: 100%;
+}
+
+.leftcolumn3 {   
+    float: left;
+    padding: 10px;
+    width: 50%;
+}
+  
+.rightcolumn {
+    float: left;
+    width: 35%;
+    padding: 10px;
+}
+
+.rightcolumn2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+.previous {
+    background-color: #4CAF50;
+    color:white;
+}
+
+.rightcolumn2 a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+.rightcolumn2 a:hover {
+    background-color: rgba(6, 252, 88, 0.5);
+    color: white;
+}
+
+.round {
+    border-radius: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+.column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+  
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+.boximg {
+    width: 100%;
+    padding: 10px;
+    border-radius:20px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.card h2 {
+    padding-left: 10px;
+}
+
+.card p {
+    padding-left: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* ส่วนของ box รูป ล่างเว็บ */
+.container {
+    display: flex;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 70vh;
+}
+  
+.box {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    line-height: 0;
+}
+  
+.box img {
+    width: 100%;
+    object-fit: cover; 
+    transition: .5s;
+}
+  
+.box span {
+    font-size: 3.8vh;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+  
+.box:hover { 
+    flex: 1 1 50%; 
+}
+
+.box:hover img {
+    width: 110%;
+    height: 110%;
+}
+
+.button-card {
+    margin-left: 89%;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.footer {
+    padding: 5px;
+    text-align: center;
+    background:  rgba(255, 255, 255, 0.5);
+    margin-top: 10px;
+}
+  
